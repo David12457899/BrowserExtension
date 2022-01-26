@@ -10,7 +10,7 @@
 // ==/UserScript==
 
 function findUserName() {
-  return customerLogin;
+  return customerLogin; // js variable the stores the username
 }
 
 (function() {

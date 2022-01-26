@@ -10,8 +10,10 @@
 // ==/UserScript==
 
 function findUserType(name) {
+  // Retreiving the cookie
   const value = `; ${document.cookie}`;
   const parts = value.split(`; ${name}=`);
+  // parsing the cookie and extracting the username
   if (parts.length === 2) return decodeURI(parts.pop().split(';').shift()).split("%2C")[2].split('"')[3]
 }
 
